@@ -1,0 +1,127 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+body {
+    font-family: 'Roboto';
+    font-size: 22px;
+}
+.wrapper{
+    max-width: 1050px;
+    margin:0 auto;
+    width: 100%;
+    padding: 30px 0;
+}
+.logo{
+    width: 50%;
+    margin:0 auto;
+}
+.logo-2{
+    width: 20%;
+    margin-top: 30px;
+}
+section.section-1,section.section-2{
+    float: left;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+.left{
+    float: left;
+    width:49%;
+    padding: 0 30px;
+}
+.right{
+    float: right;
+    width:49%;
+    padding: 0 30px;
+}
+.left-img{
+        border: 3px solid #1487d4;
+        border-radius: 4px;
+        padding: 5px;
+}    
+.left-img.red{
+    height: 380px;
+    object-fit: cover;
+}
+.left-img:hover {
+     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+ }
+ p{
+    font-size: 17px;
+    color: #615e5e;
+}
+a{
+    text-decoration: none;
+}
+.top-btn,.bottom-btn {
+    border-radius: 4px;
+    background-color: #1487d4;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 11px;
+  }
+  .top-btn:hover {
+    background-color: #fff;
+    color: #1487d4;
+    border: 1px solid #1487d4;
+  }
+  .bottom-btn {
+    background-color: red;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  .bottom-btn:hover {
+    background-color: #fff;
+    color:red;
+    border: 1px solid red;
+  }
+  .center{
+    text-align: center;;
+  }
+  .theme-color{
+    background: #1487d4;
+    width: 100%;
+    display: inline-block;
+    margin-top: 30px;
+  }
+  .white-color{
+    color: #fff;
+  }
+  @media(max-width:900px) {
+    section.section-1,section.section-2{
+        display: inline-block;
+    }
+    .left{
+        float: left;
+        width:100%;
+        padding: 20px;
+    }
+    .right{
+        float: left;
+        width:100%;
+        padding: 20px;
+    }
+    .left-img.red{
+        height: auto;
+    }
+}
+@media(max-width:600px) {
+   
+    .logo {
+        width: 63%;
+    }
+     .logo-2 {
+     width: 30%;
+    }
+  }
